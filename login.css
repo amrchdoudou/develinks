@@ -1,0 +1,240 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=New+Amsterdam&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+
+
+}
+
+body{
+    background-color: #c9d6ff;
+    background:linear-gradient(to right,#e2e2e2,#c9d6ff);
+display: flex;
+align-items: center;
+justify-content: center;
+justify-content: center;
+flex-direction: column;
+height: 100vh;
+}
+.container{
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    position:relative;
+    overflow: hidden;
+    width: 770px;
+    max-width: 100%;
+    min-height: 480px;
+transition: all 1s ease-in-out;
+
+}
+
+.container span{
+    font-size: 12px;
+
+}
+.container a{
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+.container button{
+    background:url(back.jpg);
+    background-size: cover;
+        color: white;
+    font-size: 12px;
+    padding: 10px 45px;
+    border-radius: 8px;
+
+    border:none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+.container button.hidden{
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.container form{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+    transition: all 1s ease-in-out;
+}
+.container input{
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+font-size: 13px;
+border-radius: 8px;
+width: 100%;
+outline: none;
+}
+
+.form-container{
+    width: 50%;
+    height: 100%;
+}
+#sign-upp{
+    border-radius: 30px;
+    
+    transition: all 1s ease-in-out;
+}
+
+
+.social-icons a{
+    border: 1px solid #ccc;
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
+
+
+}
+
+.toggle-panel{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+position: absolute;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    overflow: hidden;
+    width: 385px;
+    max-width: 100%;
+  height: 480px;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+   
+}
+
+
+.toggle-panel button{
+    background:url(back.jpg);
+    background-size: cover;
+        color: white;
+    font-size: 12px;
+    padding: 10px 65px;
+    border-radius: 8px;
+margin-bottom: 100px;
+    border: 1px solid white;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    
+    cursor: pointer;
+
+}
+
+.toggle p{
+ 
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 40px 0;
+
+}
+
+
+
+.toggle-left{
+    width: 50%;
+    color: white;
+    height: 100%;
+    background:url(back.jpg);
+    background-size: cover;
+    opacity: 0;
+    
+}
+.toggle-right{
+    width: 50%;
+    background:url(back.jpg);
+    background-size: cover;
+        right: 0%;
+    color:#fff;
+    height: 100%;
+  opacity: 1;
+  
+}
+
+
+@media (max-width: 850px) {
+    .container{
+        transition: all 1s ease-in-out;
+        flex-direction: column;
+        width: 100%;
+        min-height: auto;
+        box-shadow: none;
+        border-radius: 0;
+    }
+    .sign-in{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100vh;
+        transition: all 1s ease-in-out;
+    }
+    .form-container{
+        width: 100%;
+        padding: 20px;
+        transition: all 1s ease-in-out;
+    }
+    .toggle-panel{
+        display: none;
+    }
+    .container input{
+        font-size: 16px;
+
+    }
+
+    .container button{
+        display: flex;
+        justify-content: center;
+        padding: 12px;
+        width: 100%;
+        font-size: 14px;
+    }
+    h1{
+        font-size: 24px;
+        margin: 40px;
+    }
+a,
+span{
+    font-size: 20px;
+    margin: 20px;
+
+}
+
+.social-icons{
+justify-content: space-around;
+    gap: 10px;
+}
+.sign-up{
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    transition: all 1s ease-in-out;
+}
+    
+}

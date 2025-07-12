@@ -1,0 +1,979 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=New+Amsterdam&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+
+
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+
+}
+header{
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+    height: 50px;
+background: url(back.jpg);
+background-size:cover;
+
+display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+
+}
+header div{
+    display: flex;
+    
+}
+
+header .but{
+    display: flex;
+    width: 55%;
+    justify-content: space-between;
+
+}
+
+header i{
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+
+header i:hover{
+color: rgb(207, 225, 240);
+font-size: 25px;
+
+}
+
+header a img{
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+    object-fit: contain;
+    
+
+}
+
+header input{
+    position: absolute;
+margin-left: 27%;
+  max-width: 200px;
+  width: 30%;
+  height: 35px;
+  border:2px #9a9a9a solid;
+  border-radius: 0 18px 18px 0;
+
+}
+header #search{
+    width: 60px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9a9a9a;
+    border-radius: 18px 0 0 18px;
+}
+
+
+.profile_project{
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(back.jpg);
+    background-size: cover;
+}
+
+.containe_projet{
+    width: 95%;
+
+    height: 300px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    display: flex;
+    align-items: center;
+    background: url(back.jpg);  
+    background-size: cover;
+    margin:30px;
+    border-radius: 30px;
+    padding: 10px;
+   box-shadow:5px 5px 5px 5px  rgba(0, 0, 0, 0.9);
+
+}
+
+.container_profile{
+
+    width: 95%;
+    height: 400px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 1rem;
+    white-space: nowrap;
+    display: flex;
+  
+    align-items: center;
+    background: url(back.jpg); 
+    background-size: cover;
+    padding: 10px;
+    margin: 30px;
+    border-radius: 30px;
+    box-shadow:5px 5px 5px 5px  rgba(0, 0, 0, 0.9);
+
+
+}
+
+.containe_projet .scroll{
+    width: 350px;
+    min-width: 300px;
+    height: 98%;
+    border: 3px solid #7e7d7d;
+    cursor: pointer;
+    margin-right: 10px;
+    background-color: #323131;
+   display: flex;
+
+   flex-direction: column;
+    border-radius: 40px;
+}
+
+.containe_projet .scroll .image{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+        height: 100%;
+        background-color: #7e7d7d;
+        border-radius: 30px;
+}
+
+.containe_projet .scroll .image img{
+margin-top: -10px;
+    object-fit: cover;
+}
+
+.container_profile .scroll{
+    min-width: 300px;
+    height: 390px;
+    cursor: pointer;
+
+    border: 3px solid #7e7d7d;
+    margin-right: 0px;
+    background-color: #323131;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: column;
+    border-radius: 33px;
+}
+
+
+
+.containe_projet .scroll .image h2{
+    margin-top: 5px;
+}
+
+
+
+
+
+.scroll .image{
+
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: #7e7d7d;
+    border-radius: 30px;
+
+  
+}
+
+.image img{
+   margin-top: 140px;
+   border-radius: 30px 30px 0 0 ;
+    width: 102%;
+    height: 200px;
+    object-fit: cover;
+    
+
+}
+
+.scroll .information
+{
+    margin-top: 40px;
+    height: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.image h2{
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.image h3{
+    margin-top: 7px;
+    color: white;
+    font-size: 15px;
+}
+
+.image span{
+    margin-top: 7px;
+    color: white;
+    font-size: 12px;
+}
+.interaction{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #7e7d7d;
+    border-radius: 0 0 30px 30px;
+
+}
+.interaction i{
+    color: white;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.interaction i:hover{
+    color: white;
+    font-size: 25px;
+    
+}
+
+
+
+.messenger{
+    border-radius:0 40px 40px 40px;
+     top: 0;
+   
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    gap: 1rem;
+    position: fixed;
+    margin-top: 50px;
+
+   
+    flex-direction: column;
+    padding-top: 50px;
+    transition: all 2s ease-in-out;
+
+
+
+    background-color: rgb(46, 46, 46);
+}
+.messenger .message_box{
+    display: flex;
+    color: white;
+    background-color: #1f1f1f;
+position: absolute;
+width: 100%;
+align-items: center;
+padding: 4px;
+top: 0;
+    justify-content: space-around;
+
+}
+
+.messenger h1{
+
+   margin-left: 20px;
+     display: flex;
+    align-items: center;
+    height: 40px;
+    top :0;
+    font-size: 20px;
+    background-color: 22424;
+    color: #fff;
+    width: 100%;
+    
+
+}
+
+.messenger .message_box i{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+
+
+
+.messenger .list_message{
+    display: flex;
+    overflow-y: auto;
+    flex: 1;
+    flex-direction: column;
+
+
+}
+.messenger .list_message .person{
+cursor: pointer;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+  
+}
+
+.list_message .person img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 15px;
+    cursor: pointer;
+
+}
+
+.person h3{
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+
+
+}
+
+
+
+.liked {
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    width: 3%;
+    height: 1%;
+    right: 35%;
+    border-radius: 0 30px 0px 100%;
+    
+  }
+  .liked.active {
+ opacity: 0.95;
+    transform: translateY(0);
+    right:8%;
+    height: 60%;
+    width: 22%;
+    pointer-events: auto;
+    border-radius: 0 30px 30px 30px;
+
+    display: flex; /* or keep it as block depending on your layout */
+  }
+
+
+
+.messa {
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    right: 55%;
+    width: 3%;
+    height: 1%;
+    border-radius: 0 30px 100% 100%;
+
+  }
+  .messa.active {
+ opacity: 0.95;
+    transform: translateY(0);
+    right:31%;
+    height: 60%;
+    width: 22%;
+    pointer-events: auto;
+    display: flex; /* or keep it as block depending on your layout */
+    border-radius: 0 30px 30px 30px;
+
+  }
+
+
+
+.comunnication{
+   display: flex;
+margin-bottom: 350px;
+position: fixed;
+opacity: 0;
+height: 3%;
+width: 3%;
+background-color: #2f2f2f;
+flex-direction: column;
+border-radius:0 30px 30px 300px;
+
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+overflow: hidden;
+z-index: 999;
+right: 25%;
+transition: all 0.2s ease-in-out;
+}
+
+.comunnication.active{
+    border-radius:0px 30px 30px 30px;
+
+ 
+top: 33%;
+position: fixed;
+opacity: 0.95;
+height: 63%;
+width: 23%;
+background-color: #2f2f2f;
+flex-direction: column;
+
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+overflow: hidden;
+z-index: 999;
+right: 8%;
+}
+
+
+.chat_header{
+    color: white;
+
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #444;
+    background-color: #1f1f1f;
+}
+
+.like-button.liked {
+    color: red;
+  }
+
+
+.chat_box{
+    flex: 1;
+    padding: 10px;
+    height: 80%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mess{
+    padding: 10px;
+    border-radius: 18px;
+    max-width: 80%;
+    color: white;
+    font-size: 14px;
+    word-wrap: break-word;
+    display: flex;
+
+}
+.mess.send{
+    background-color:#0078ff;
+    align-self: flex-end;
+}
+
+.mess.rec{
+    align-self: flex-start;
+    align-items: center;
+}
+
+.mess.rec img{
+width: 40px;
+height: 40px;
+object-fit: cover;
+border-radius: 50%;
+border: 2px solid white;
+margin-right: 10px;
+
+}
+
+.mess.rec span{
+    background-color: #444;
+    max-width: 80%;
+    border-radius: 18px;
+}
+
+
+
+
+
+.chat_input{
+    display: flex;
+    border-top: 1px solid #444;
+    background-color: #1f1f1f;
+    padding: 15px;
+
+}
+
+.chat_input input{
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+
+.chat_input button{
+    background:none;
+    color: white;
+    border: none;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+.projectproject{
+    opacity: 0;
+    height:1%;
+    width: 1%;
+    position: fixed;
+    pointer-events: none;
+overflow-y: auto;
+scroll-behavior: smooth;
+    overflow: hidden;
+    z-index: 999;
+    right:40%;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    margin-bottom: 350px;
+    border-radius:30px 30px 30px 30px;
+
+
+}
+
+
+
+.projectproject.active{
+    opacity: 1;
+    overflow: hidden;
+    pointer-events: auto;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    right: 20%;
+   
+    height: 80%;
+    width: 60%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+
+}
+
+
+
+
+
+
+
+
+.projectproject .scroll {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectproject .scroll .image{
+    height:50%;
+
+
+}
+
+.projectproject .scroll .image img{
+    height: 100%;
+    margin-top:0px ;
+
+
+}
+
+.projectproject .scroll .infoprojet{
+    width: 70%;
+    height: 50%;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 40px;
+}
+
+
+
+
+.projectproject .profile{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+background-color: #323131;
+    color: white;
+    border-radius: 30px;
+    margin-bottom: 5px;
+
+}
+
+.projectproject .profile .image{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 30px;
+}
+
+.projectproject .profile .image .cover{
+width: 100%;
+height:100%;
+
+}
+
+.projectproject .profile .image .cover img{
+    width: 100%;
+    height:100%;
+    margin-top: 0px;
+    }
+
+.projectproject .profile .image .image_profile{
+position: absolute;
+width: 140px;
+height: 140px;
+border-radius: 50%;
+
+}
+
+
+.projectproject .profile .image .image_profile img{
+width: 100%;
+height: 100%;
+border-radius: 50%;
+margin: 150px 40px;
+border: 3px solid #fff;
+
+}
+
+.projectproject .profile .information{
+    width: 100%;
+    height: 40%;
+    padding: 20px;
+}
+.projectproject .profile .information h1,h2,h3,span{
+    padding: 5px;
+}
+
+
+
+.projectproject .project{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #323131;
+    color: white;
+    border-radius: 30px;
+   
+    margin-bottom: 30px;
+
+}
+.projectproject .project .header_project{
+    width: 100%;
+    height: 60px;
+    
+}
+.projectproject .project .header_project h1{
+    padding: 10px;
+}
+
+
+.projectproject .project .project_box{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+height: 500px;
+width: 100%;
+background-color: #2f2f2f;
+overflow-x: auto;
+padding: 20px;
+scroll-behavior: smooth;
+}
+
+
+.projectproject .project .project_box .scroll{
+    min-width: 400px;
+    min-height: 400px;
+    height: 80%;
+    margin: 10px;
+    
+
+}
+
+
+.projectproject .project .project_box .scroll .image{
+
+   width: 100%;
+    height: 100%;
+    
+
+}
+
+.projectproject .project .project_box .scroll .image img{
+height: 70%;
+min-height: 240px;
+width: 100%;
+object-fit: cover;
+}
+
+
+
+
+
+
+
+.update_information{
+    opacity: 0;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+overflow: hidden;
+    left: 53%;
+    top: 20%;
+    width: 6%;
+    height: 50px;
+    background-color: #3b3b3b;
+    position: absolute;
+    padding: 30px;
+    transition: all 0.5s ease;
+    z-index: 999;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+.update_information.active{
+    opacity: 1;
+overflow: hidden;
+
+    left: 22%;
+    top: 20%;
+    width: 40%;
+    height: 400px;
+    background-color: #3b3b3b;
+    padding: 30px;
+
+}
+
+
+.update_information input{
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+}
+.update_information button{
+    margin-top: 20px;
+    margin-left: 230px;
+    background-color: rgb(250, 246, 240);
+    border: none;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+transition: all 0.3s ease;
+cursor: pointer;
+
+}
+
+
+.update_information button:hover{
+    padding: 15px;
+    
+}
+
+
+.info_add_projet{
+    display: flex;
+    padding: 20px 60px;
+    height: 60px;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+
+
+
+}
+.info_add_projet button{
+    width: 120px;
+    padding: 10px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 900;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.info_add_projet button:hover{
+    width: 140px;
+    padding: 15px;
+    height: 45px;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1025px){
+    .messa.active {
+        opacity: 1;
+           transform: translateY(0);
+           right:0%;
+           height: 100%;
+           width:100%;
+           pointer-events: auto;
+           display: flex; 
+           border-radius: 0 ;
+       
+         }
+
+         .liked.active {
+            opacity: 1;
+               transform: translateY(0);
+               right:0%;
+               height: 100%;
+               width:100%;
+               pointer-events: auto;
+               display: flex; 
+               border-radius: 0px;
+           
+             }
+
+             .comunnication.active{
+                width: 100%;
+                height: 96%;
+                top: 50px;
+                opacity: 1;
+                right: 0%;
+                pointer-events: auto;
+                display: flex; 
+                border-radius: 0px;
+
+             }
+
+             header{
+                padding: 20px 5px;
+             }
+
+
+
+             .projectproject.active{
+                opacity: 1;
+                overflow: hidden;
+                pointer-events: auto;
+                overflow-y: auto;
+                scroll-behavior: smooth;
+                right: 0%;
+               margin-top: 60px;
+                height:92%;
+                width: 100%;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+            
+            }
+
+
+            .projectproject .scroll .infoprojet{
+                width: 100%;
+                height: 50%;
+                
+                padding: 10px;
+            }
+
+
+            .projectproject .profile .image .cover{
+                height: 250px;
+            }
+
+
+
+.projectproject .profile .image .image_profile img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin-top: 150px;
+    border: 3px solid #fff;
+    
+    }
+    .projectproject .profile{
+        height: 88%;
+    }
+    
+    .projectproject .profile .information{
+        width: 100%;
+        height: 30%;
+        padding: 5px;
+    }
+    .projectproject .profile .information h1,h2,h3,span{
+        font-size: 20px;
+        padding: 5px;
+}
+
+
+
+
+
+.projectproject .project .project_box .scroll{
+    min-width: 300px;
+    min-height: 400px;
+    height: 80%;
+    margin: 5px;
+    
+
+}
+}
+@media (max-width: 767px){
+.containe_projet{
+    width: 100%;
+    border-radius: 0px;
+}
+.container_profile{
+    width: 100%;
+    border-radius: 0px;
+}
+
+.comunnication.active{
+   
+    height: 94%;
+}
+
+
+}
+
